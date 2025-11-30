@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> حلقة سعد بن معاذ  </title>
+<link rel="stylesheet" href="نقاطييي.css">
+</head>
+<body>
+
+<h2> نقاط حلقة سعد بن معاذ</h2>
+
+<!-- تسجيل دخول المشرف -->
+<div id="login_div">
+  <p>تسجيل دخول المشرف:</p>
+  <input id="password_input" type="password" placeholder="كلمة السر">
+  <button id="login_btn">دخول</button>
+  <p id="login_message"></p>
+</div>
+
+<!-- تسجيل دخول الطالب -->
+<div id="student_login_div">
+  <p>تسجيل دخول الطالب:</p>
+  <input id="student_code_input" type="text" placeholder="رمز الطالب">
+  <button id="student_login_btn">دخول</button>
+  <p id="student_message"></p>
+</div>
+
+<!-- لوحة المشرف -->
+<div id="dashboard_div" style="display:none;">
+  <h3>لوحة التحكم</h3>
+
+  <button id="logout_admin_btn" style="background:red;">🔴 تسجيل خروج</button>
+
+  <div class="section">
+    <h4>إضافة طالب جديد</h4>
+    <input id="new_student_name" type="text" placeholder="اسم الطالب">
+    <input id="new_student_code" type="text" placeholder="رمز الطالب (مثل A1)">
+    <select id="new_student_class">
+      <option value="1">حلقة 1</option>
+      <option value="2">حلقة 2</option>
+      <option value="3">حلقة 3</option>
+      <option value="4">حلقة 4</option>
+      <option value="5">حلقة 5</option>
+       <option value="6">حلقة 6</option>
+        <option value="7">حلقة 7</option>
+         <option value="8">حلقة 8</option>
+          <option value="9">حلقة 9</option>
+           <option value="10">حلقة 10</option>
+    </select>
+    <button id="add_student_btn">إضافة</button>
+  </div>
+<img src="سعد بن معاذ.jpg" alt="">
+
+  <div class="section">
+    <h4>حذف طالب</h4>
+    <select id="delete_student_select"></select>
+    <button id="delete_student_btn" style="background:#b30000;">حذف الطالب</button>
+  </div>
+
+  <div class="section">
+    <h4>إضافة / خصم نقاط</h4>
+    <select id="points_student"></select>
+    <input id="points_value" type="number" placeholder="عدد النقاط">
+    <button id="add_points_btn">إضافة نقاط</button>
+    <button id="subtract_points_btn">خصم نقاط</button>
+  </div>
+
+  <h4>جميع الطلاب</h4>
+  <pre id="students_list"></pre>
+</div>
+
+<!-- واجهة الطالب -->
+<div id="student_dashboard" style="display:none;">
+  <h3>واجهة الطالب</h3>
+
+  <button id="logout_student_btn" style="background:red;">🔴 تسجيل خروج</button>
+
+  <p id="student_name_display"></p>
+  <p>نقاطك: <span id="student_points_display"></span></p>
+  <p>صفك: <span id="student_class_display"></span></p>
+  <button id="refresh_student_btn">🔄 تحديث الصفحة</button>
+
+</div>
+
+<script src="نقاطيي.js"></script>
+</body>
+</html>

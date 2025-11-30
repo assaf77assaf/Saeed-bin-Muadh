@@ -1,0 +1,48 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+  background: #f2f2f2;
+}
+
+h2 {
+  color: #004080;
+  text-align: center;
+}
+
+input, button, select {
+  padding: 7px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0066cc;
+}
+
+#login_div, #student_login_div, #dashboard_div, #student_dashboard {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 15px auto;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+#students_list {
+  background: #e6f0ff;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 150px;
+}
